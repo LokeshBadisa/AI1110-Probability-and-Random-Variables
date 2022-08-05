@@ -6,7 +6,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-values = np.loadtxt('t.dat', dtype='double')
+values = np.loadtxt('codes/t.dat', dtype='double')
 NUM = len(values)
 X1 = np.linspace(-1, 3, 30)
 X2 = np.linspace(-1, 3, 100)
@@ -38,5 +38,5 @@ plt.plot(X2, the_pdf, label='Theoretical')
 plt.plot(X1, emp_pdf, 'o', label='Empirical')
 plt.grid()
 plt.legend()
-plt.savefig('../figs/4.3.png')
+plt.savefig('figs/4.3.png')
 plt.show()
